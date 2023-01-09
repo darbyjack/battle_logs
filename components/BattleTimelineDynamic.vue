@@ -8,7 +8,7 @@ export default {
     view_round: 1,
   }),
   mounted() {
-    fetch('/retrieve', {
+    fetch('/retrieval/retrieve', {
       method: 'GET',
       headers: {
         'BATTLE_LOG_KEY': `${this.id}`

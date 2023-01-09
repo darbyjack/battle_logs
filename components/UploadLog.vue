@@ -24,7 +24,7 @@ function parse_log(e) {
           const data = battle_log.tables;
           localStorage.setItem(file.name, JSON.stringify(data));
           localStorage.setItem("current", file.name);
-          fetch('/insert', {
+          fetch('/entry/insert', {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify(data)
