@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     fontLoader: {
       local: [
         {
-          src: '/roboto.woff2',
+          src: '/fonts/roboto.woff2',
           family: 'Roboto',
           weight: '100 300 400 500 700 900',
           display: 'swap',
