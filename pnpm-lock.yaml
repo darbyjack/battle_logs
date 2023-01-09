@@ -4,17 +4,21 @@ specifiers:
   '@mdi/font': ^7.1.96
   '@nuxtjs/google-fonts': 3.0.0-1
   chart.js: ^4.1.2
+  js-base64: ^3.7.4
   jszip: ^3.10.1
   nuxt: 3.0.0
   sass: ^1.57.1
+  uuid: ^9.0.0
   vue-chartjs: ^5.1.0
   vuetify: ^3.1.0
 
 dependencies:
   '@mdi/font': 7.1.96
   chart.js: 4.1.2
+  js-base64: 3.7.4
   jszip: 3.10.1
   sass: 1.57.1
+  uuid: 9.0.0
   vue-chartjs: 5.1.0_chart.js@4.1.2
   vuetify: 3.1.0
 
@@ -2655,6 +2659,10 @@ packages:
     hasBin: true
     dev: true
 
+  /js-base64/3.7.4:
+    resolution: {integrity: sha512-wpM/wi20Tl+3ifTyi0RdDckS4YTD4Lf953mBRrpG8547T7hInHNPEj8+ck4gB8VDcGyeAWFK++Wb/fU1BeavKQ==}
+    dev: false
+
   /js-tokens/4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
     dev: true
@@ -4429,6 +4437,11 @@ packages:
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+
+  /uuid/9.0.0:
+    resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==}
+    hasBin: true
+    dev: false
 
   /vite-node/0.25.8_sass@1.57.1:
     resolution: {integrity: sha512-o1GsPZcq4ce7ZUUALnOfYP/bjaHQYtLDLuirOMvYCdsuvDMb2tggib2RZRfHIhTEF2QnIgyQEoyaOjAMHGPRiw==}

@@ -1,9 +1,12 @@
 <script setup>
- import BattleTimeline from '~~/components/BattleTimeline.vue';
+import BattleTimelineDynamic from '~~/components/BattleTimelineDynamic.vue';
+ const route = useRoute();
+
+ const id = route.query.id;
 </script>
 
 <template>
-    <BattleTimeline />
+    <BattleTimelineDynamic :id="id" />
 </template>
 
   

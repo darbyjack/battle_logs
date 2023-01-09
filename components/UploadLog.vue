@@ -19,12 +19,21 @@ onMounted(() => {
 
 function parse_log(e) {
     let file = e.target.files[0];
-      console.log(file);
       let csv_data = new BattleLog();
       csv_data.from_file(file).then((battle_log) => {
-          localStorage.setItem(file.name, JSON.stringify(battle_log.tables));
+          const data = battle_log.tables;
+          localStorage.setItem(file.name, JSON.stringify(data));
           localStorage.setItem("current", file.name);
-          router.push({ "path": "/battle"});
+          fetch('/insert', {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json'},
+            body: JSON.stringify(data)
+          }).then(async (response) => {
+            console.log(response.status);
+            const data = await response.json();
+            const id = data.id;
+            router.push({ "path": "/battle", "query": { "id": id } });
+          });
       });   
 }
 
