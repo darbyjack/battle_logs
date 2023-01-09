@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     nitro: {
-      preset: "cloudflare-pages",
+      preset: "node-server",
     },
     css: [
       "vuetify/lib/styles/main.sass",
