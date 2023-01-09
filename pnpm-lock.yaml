@@ -5,6 +5,7 @@ specifiers:
   chart.js: ^4.1.2
   jszip: ^3.10.1
   nuxt: 3.0.0
+  nuxt-font-loader: ^2.2.2
   sass: ^1.57.1
   vue-chartjs: ^5.1.0
   vuetify: ^3.1.0
@@ -19,6 +20,7 @@ dependencies:
 
 devDependencies:
   nuxt: 3.0.0_sass@1.57.1
+  nuxt-font-loader: 2.2.2
 
 packages:
 
@@ -3093,6 +3095,10 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /nuxt-font-loader/2.2.2:
+    resolution: {integrity: sha512-6H7CS9t5OMVsCfzxDTZadOxbj9wpsUZoknvlp/7+UuwI83pZbdm6dDbztAkGkKHBDNcvXrBGokQuJJl2VhekMg==}
     dev: true
 
   /nuxt/3.0.0_sass@1.57.1:

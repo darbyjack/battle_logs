@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <v-app>
+  <v-app class="font-roboto">
     <AppBar />
       
     <AppView />

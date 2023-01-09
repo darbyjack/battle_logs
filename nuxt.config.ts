@@ -8,4 +8,18 @@ export default defineNuxtConfig({
     build: {
       transpile: ["vuetify", "chart.js"],
     },
+    modules: ['nuxt-font-loader'],
+    fontLoader: {
+      local: [
+        {
+          src: '/roboto.woff2',
+          family: 'Roboto',
+          weight: '100 300 400 500 700 900',
+          display: 'swap',
+          style: 'normal',
+          fallback: 'sans-serif',
+          class: 'font-roboto'
+        }
+      ]
+    }
   })
